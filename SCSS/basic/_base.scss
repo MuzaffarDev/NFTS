@@ -1,0 +1,21 @@
+body {
+  height: 100vh;
+  display: flex;
+  min-width: 320px;
+  user-select: none;
+  flex-direction: column;
+  background-color:$body-bg-color;
+  font-family: "Open-sans", "Tahoma", "Arrial";
+  @include font(400,16px,20px,rgba(255, 255, 255, 0.5));
+}
+
+.wrapper {
+  margin-top: auto;
+  // padding-top: 90px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 100px;
+  max-width: 1440px;
+}

@@ -4,9 +4,10 @@ body {
   min-width: 320px;
   user-select: none;
   flex-direction: column;
-  background-color:$body-bg-color;
+  background-color: red;
   font-family: "Open-sans", "Tahoma", "Arrial";
-  @include font(400,16px,20px,rgba(255, 255, 255, 0.5));
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .wrapper {

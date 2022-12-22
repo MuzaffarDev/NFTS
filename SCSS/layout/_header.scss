@@ -1,12 +1,12 @@
 .header {
-  // position: fixed;
-  position: sticky;
+  // position: sticky;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 100;
   padding: 20px 0;
+  position: fixed;
   background: #2C0B40;
   box-shadow: 0 0 20px 1px #00000099;
 
@@ -103,10 +103,10 @@
     }
     &-item {
       a {
-        position: relative;
-        text-decoration: none;
         @include font();
         font-style: normal;
+        position: relative;
+        text-decoration: none;
         font-family: "Open Sans";
 
         @include md {
@@ -123,11 +123,11 @@
           content: "";
           height: 2px;
           bottom: -5px;
-          position: absolute;
           border-radius: 3px;
-          background: $primary-gradient-color;
-          transition: width 0.3s ease;
+          position: absolute;
           transform: translateX(-50%);
+          transition: width 0.3s ease;
+          background: $primary-gradient-color;
         }
       }
 
@@ -141,10 +141,10 @@
           content: "";
           height: 2px;
           width: 100%;
-          position: absolute;
           bottom: -5px;
-          background: $primary-gradient-color;
           border-radius: 3px;
+          position: absolute;
+          background: $primary-gradient-color;
         }
       }
     }

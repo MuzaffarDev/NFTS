@@ -23,8 +23,6 @@ body {
           user-select: none;
   flex-direction: column;
   background: #2c0b40;
-  -webkit-backdrop-filter: blur(300px);
-          backdrop-filter: blur(300px);
   background-repeat: no-repeat;
   font-weight: 400;
   font-size: 16px;
@@ -43,12 +41,20 @@ body {
 
 .wrapper {
   margin-top: auto;
+  padding-top: 90px;
 }
 @media only screen and (max-width: 769px) {
   .wrapper {
     margin-top: 0;
+    padding-top: 60px;
   }
 }
+@media only screen and (max-width: 376px) {
+  .wrapper {
+    padding-top: 70px;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -64,8 +70,8 @@ body {
 }
 @media only screen and (max-width: 376px) {
   .container {
-    display: contents;
     padding: 0 5px;
+    display: contents;
   }
 }
 
@@ -1127,14 +1133,13 @@ template {
 }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 100;
   padding: 20px 0;
+  position: fixed;
   background: #2C0B40;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.6);
 }
@@ -1228,14 +1233,14 @@ template {
   }
 }
 .header__menu-item a {
-  position: relative;
-  text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 0;
   font-style: normal;
+  position: relative;
+  text-decoration: none;
   font-family: "Open Sans";
 }
 @media only screen and (max-width: 769px) {
@@ -1262,11 +1267,11 @@ template {
   content: "";
   height: 2px;
   bottom: -5px;
-  position: absolute;
   border-radius: 3px;
-  background: linear-gradient(90deg, rgb(201, 34, 227) 0%, rgb(138, 35, 216) 29%, rgb(211, 37, 196) 58%, rgb(138, 35, 216) 84%);
-  transition: width 0.3s ease;
+  position: absolute;
   transform: translateX(-50%);
+  transition: width 0.3s ease;
+  background: linear-gradient(90deg, rgb(201, 34, 227) 0%, rgb(138, 35, 216) 29%, rgb(211, 37, 196) 58%, rgb(138, 35, 216) 84%);
 }
 .header__menu-item:hover a::before {
   width: 100%;
@@ -1278,10 +1283,10 @@ template {
   content: "";
   height: 2px;
   width: 100%;
-  position: absolute;
   bottom: -5px;
-  background: linear-gradient(90deg, rgb(201, 34, 227) 0%, rgb(138, 35, 216) 29%, rgb(211, 37, 196) 58%, rgb(138, 35, 216) 84%);
   border-radius: 3px;
+  position: absolute;
+  background: linear-gradient(90deg, rgb(201, 34, 227) 0%, rgb(138, 35, 216) 29%, rgb(211, 37, 196) 58%, rgb(138, 35, 216) 84%);
 }
 .header__btns {
   gap: 24px;

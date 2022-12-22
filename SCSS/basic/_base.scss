@@ -5,7 +5,7 @@ body {
   user-select: none;
   flex-direction: column;
   background: #2c0b40;
-  backdrop-filter: blur(300px);
+  // backdrop-filter: blur(300px);
   background-repeat: no-repeat;
   @include font();
   font-family: "Open-sans", "Ruda", "DM sans";
@@ -18,14 +18,14 @@ body {
 
 .wrapper {
   margin-top: auto;
-  // padding-top: 90px;
+  padding-top: 90px;
 
   @include md {
-    // padding-top: 60px;
     margin-top: 0;
+    padding-top: 60px;
   }
   @include xs {
-    // padding-top: 70px;
+    padding-top: 70px;
   }
 }
 
@@ -41,8 +41,8 @@ body {
     justify-content: space-between;
   }
   @include xs {
-    display: contents;
     padding: 0 5px;
+    display: contents;
   }
 }
 

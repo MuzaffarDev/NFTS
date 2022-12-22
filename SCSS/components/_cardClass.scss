@@ -1,0 +1,23 @@
+.card:hover{
+  width: 337px;
+  height: 320px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #301c49;
+  border-color:$secondary-gradient-color;
+}
+
+.card-title {
+  font-style: normal;
+  font-family: "Open Sans";
+  @include sliceText(3);
+  @include font(600, 24px, 33px, $primaryTextColor, 16px);
+}
+
+.card-desc {
+  font-style: normal;
+  text-align: center;
+  font-family: "Open Sans";
+  @include sliceText(6);
+  @include font(400, 14px, 24px, #d7d7d7);
+}

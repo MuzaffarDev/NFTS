@@ -1,0 +1,252 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 0;
+  background: transparent;
+  box-shadow: 0 0 20px 1px #00000099;
+
+  @include md {
+    padding: 10px 0;
+    margin-bottom: 30px;
+  }
+
+  @include xs {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+      gap: 120px;
+    }
+  }
+
+  &.show {
+    .header__close-menu {
+      display: block;
+    }
+    .header__open-menu {
+      display: none;
+    }
+
+    .header__menu-list {
+      background: #000000d4;
+      transform: translateX(0);
+    }
+  }
+
+  &__logo {
+    width: 93px;
+    height: 32px;
+    overflow: hidden;
+
+    @include md {
+      width: 70px;
+      height: 24px;
+    }
+    @include xs {
+      width: 70px;
+      height: 25px;
+    }
+  }
+
+  &__menu {
+    gap: 130px;
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+      gap: 80px;
+    }
+
+    &-list {
+      gap: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include md {
+        gap: 28px;
+      }
+
+      @include xs {
+        gap: 50px;
+        // display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        position: absolute;
+        padding-top: 120px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+        transition: all 0.3s ease;
+        transform: translateX(-100%);
+        background: linear-gradient(
+          180deg,
+          rgba(254, 252, 247, 0.504981) 0%,
+          #fefcf7 55.94%
+        );
+      }
+    }
+    &-item {
+      a {
+        position: relative;
+        text-decoration: none;
+        @include font();
+        font-style: normal;
+        font-family: "Open Sans";
+
+        @include md {
+          @include font(400, 10px, 14px);
+        }
+
+        @include xs {
+          @include font(400, 26px, 30px);
+        }
+
+        &::before {
+          left: 50%;
+          width: 0%;
+          content: "";
+          height: 2px;
+          bottom: -5px;
+          position: absolute;
+          border-radius: 3px;
+          background: $primary-gradient-color;
+          transition: width 0.3s ease;
+          transform: translateX(-50%);
+        }
+      }
+
+      &:hover a::before {
+        width: 100%;
+      }
+
+      &.active a {
+        color: $primary-gradient-color;
+        &::before {
+          content: "";
+          height: 2px;
+          width: 100%;
+          position: absolute;
+          bottom: -5px;
+          background: $primary-gradient-color;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+
+  &__btns {
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+      gap: 12px;
+    }
+
+    @include sm {
+      display: none;
+    }
+
+    .login-btn {
+      @include font();
+      padding: 8px 16px;
+      background: transparent;
+
+      @include md {
+        padding: 4px 8px;
+        @include font(400, 10px, 14px);
+      }
+    }
+
+    .signup-btn {
+      width: 110px;
+      padding: 12px 24px;
+      @include font(400, 16px, 16px);
+
+      @include md {
+        width: 80px;
+        padding: 8px 12px;
+        @include font(400, 12px, 14px);
+      }
+    }
+  }
+
+  &__open-menu {
+    width: 27px;
+    height: 3px;
+    display: none;
+    border-radius: 2px;
+    position: relative;
+    background-color: #ffffff;
+
+    @include sm {
+      display: block;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      left: 0;
+      width: 100%;
+      height: 3px;
+      border-radius: 2px;
+      position: absolute;
+      display: inline-block;
+      background-color: #ffffff;
+    }
+
+    &::after {
+      top: -6px;
+    }
+
+    &::before {
+      bottom: -6px;
+    }
+  }
+
+  &__close-menu {
+    width: 20px;
+    border: none;
+    z-index: 100;
+    display: none;
+    border-radius: 4px;
+    position: relative;
+    background-color: transparent;
+
+    &::after,
+    &::before {
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      position: absolute;
+      background-color: #ffffff;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+}

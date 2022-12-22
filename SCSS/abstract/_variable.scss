@@ -1,10 +1,46 @@
 $xl: 1200px;
 $lg: 992px;
-$md: 768px;
+$md: 769px;
 $sm: 575px;
-$xs: 375px;
+$xs: 376px;
 
-$primaryColor:#F8D7A4;
+$primaryTextColor: #ffffff;
+
+
+$border-gradient-color: linear-gradient(
+  311deg,
+  rgba(138, 64, 255, 1) 41%,
+  rgba(234, 0, 173, 0.9054972330729166) 100%
+);
+
+$primary-gradient-color: linear-gradient(
+  90deg,
+  rgba(201, 34, 227, 1) 0%,
+  rgba(138, 35, 216, 1) 29%,
+  rgba(211, 37, 196, 1) 58%,
+  rgba(138, 35, 216, 1) 84%
+);
+
+$secondary-gradient-color: linear-gradient(
+  101.9deg,
+  rgba(201, 34, 227, 0.4) 7.67%,
+  rgba(153, 30, 234, 0.4) 52.66%,
+  rgba(73, 23, 246, 0.4) 93.7%
+);
+
+$card-gradient-color: linear-gradient(
+  167deg,
+  rgba(218, 34, 227, 1) 18%,
+  rgba(113, 35, 216, 1) 64%
+);
+
+
+$hero-text-gradient-color: linear-gradient(
+  259.74deg,
+  #af25d3 75.33%,
+  #9725d6 85.93%,
+  #5e23d9 98.26%
+);
 
 
 // @include lg {

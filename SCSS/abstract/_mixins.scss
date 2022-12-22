@@ -19,10 +19,10 @@
 
 @mixin font(
   $font-weight: 400,
-  $fontSize: 14px,
-  $lineHeight: 21px,
-  $textColor: $primary-color,
-  $margin-botton: 0px
+  $fontSize: 16px,
+  $lineHeight: 24px,
+  $textColor: $primaryTextColor,
+  $margin-botton: 0
 ) {
   font-weight: $font-weight;
   font-size: $fontSize;

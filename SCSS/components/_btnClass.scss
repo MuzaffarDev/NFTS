@@ -1,0 +1,27 @@
+.btn {
+  cursor: pointer;
+  border:0;
+  border-radius: 4px;
+  @include sliceText(2);
+  text-transform: capitalize;
+  color: $primaryTextColor;
+  background: linear-gradient(
+    101.9deg,
+    rgba(201, 34, 227, 0.4) 7.67%,
+    rgba(153, 30, 234, 0.4) 52.66%,
+    rgba(73, 23, 246, 0.4) 93.7%
+  );
+
+  &:hover {
+    background: linear-gradient(
+      250.9deg,
+      rgba(201, 34, 227, 0.4) 7.67%,
+      rgba(153, 30, 234, 0.4) 52.66%,
+      rgba(73, 23, 246, 0.4) 93.7%
+    );
+  }
+
+  &:active {
+    background: $border-gradient-color;
+  }
+}

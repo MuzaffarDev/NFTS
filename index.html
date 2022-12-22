@@ -4,11 +4,149 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>NFTS</title>
   </head>
   <body>
+    <div class="modal">
+      <div class="modal__backdrop">
+        <div class="modal__wrapper">
+          <div class="modal__head">
+            <h1 class="modal__title">NFTS log in !</h1>
+            <button class="close"></button>
+          </div>
+          <div class="modal__body">
+            <form class="form__modal" action="GET">
+              <label class="visually-hidden" for="#">Firstname</label>
+              <input type="text" placeholder="Firstname" />
+              <label class="visually-hidden" for="#">Lastname</label>
+              <input type="text"  placeholder="Lastname">
+              <label class="visually-hidden" for="#">email</label>
+              <input type="email" placeholder="email" />
+              <div class="modal__button">
+                <button class="modal__btn" type="submit">login in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <!-- start header -->
+      <header class="header">
+        <div class="container">
+          <div class="header__nav">
+            <div class="header__logo">
+              <a class="header__logo-link" href="#">
+                <img src="./media/img/logo.svg" alt="NFTs logo image" />
+              </a>
+            </div>
+            <div class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#">Market</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#">Artists</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#">Community</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#">Wallett</a>
+                </li>
+              </ul>
+              <div class="header__btns">
+                <button class="btn login-btn open">Login</button>
+                <button class="btn signup-btn">Sign Up</button>
+              </div>
+              <span class="header__open-menu"></span>
+              <span class="header__close-menu"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End of header -->
+<div class="wrap__base">
+ <!-- start hero section -->
+ <section class="hero">
+  <div class="hero__banner-content-1">
+    <div class="hero__banner-picture-3">
+      <img src="./media/img/hero-skilet-img.png" alt="hero skilet image" />
+    </div>
+    <div class="hero__banner-picture-4">
+      <img
+        src="./media/img/hero-redMusk-img.png"
+        alt="hero redmusk image"
+      />
+    </div>
+  </div>
 
+          <div class="container d-flex">
+            <div class="hero__info">
+              <h2 class="hero__info-title">
+                Buy and Sell Digital Art,
+                <span class="hero__info-word">NFT</span> Collection
+              </h2>
+              <p class="hero__info-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisc elit amet.
+                Consectetu at it lrorem ipsum dolor sit amet.
+              </p>
+              <div class="hero__info-linkvideo">
+                <button class="btn hero__info-btn">Explore</button>
+                <a
+                  href="https://youtu.be/8hXAJ0bMVDE"
+                  target="_blank"
+                  class="play__video d-flex"
+                >
+                  <span class="play__video-icon"
+                    ><img
+                      src="./media/img/hero-media-play-icon.svg"
+                      alt="hero-media-play-icon"
+                  /></span>
+                  <span class="play__video-word">Watch Video</span>
+                </a>
+              </div>
+              <div class="hero__info-statistiks">
+                <div class="hero__info-statistik">
+                  <h4 class="hero__info-statistik-title">80K+</h4>
+                  <p class="hero__info-statistik-desc">Active user</p>
+                </div>
+                <div class="hero__info-statistik">
+                  <h4 class="hero__info-statistik-title">27K+</h4>
+                  <p class="hero__info-statistik-desc">Artworks</p>
+                </div>
+                <div class="hero__info-statistik">
+                  <h4 class="hero__info-statistik-title">3.5K+</h4>
+                  <p class="hero__info-statistik-desc">Artists</p>
+                </div>
+              </div>
+            </div>
+            <div class="hero__banner">
+              <div class="hero__banner-content-2">
+                <div class="hero__banner-picture-1">
+                  <img src="./media/img/hero-cat-img.png" alt="hero cat image" />
+                </div>
+                <div class="hero__banner-picture-2">
+                  <img
+                    src="./media/img/hero-violetKub-img.png"
+                    alt="hero violet cub image"
+                  />
+                </div>
+              </div>
+              <div class="hero__banner-img">
+                <img src="./media/img/hero-main-img.png" alt="hero main photo " />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of hero section -->
+</div>
+
+    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>

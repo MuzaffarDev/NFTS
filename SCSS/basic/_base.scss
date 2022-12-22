@@ -1,22 +1,51 @@
 body {
+  width: 100%;
   height: 100vh;
   display: flex;
-  min-width: 320px;
   user-select: none;
   flex-direction: column;
-  background-color: red;
-  font-family: "Open-sans", "Tahoma", "Arrial";
-  font-size: 24px;
-  font-weight: 700;
+  background: #2c0b40;
+  backdrop-filter: blur(300px);
+  background-repeat: no-repeat;
+  @include font();
+  font-family: "Open-sans", "Ruda", "DM sans";
+
+  @include xs {
+    background: #2b0542;
+    backdrop-filter: blur(50px);
+  }
 }
 
 .wrapper {
   margin-top: auto;
-  // padding-top: 90px;
+  padding-top: 90px;
+
+  @include md {
+    padding-top: 60px;
+    margin-top: 0;
+  }
+  @include xs {
+    padding-top: 70px;
+  }
 }
+
 
 .container {
   margin: 0 auto;
-  padding: 0 100px;
-  max-width: 1440px;
+  padding: 0 20px;
+  max-width: 1280px;
+  @include md {
+    padding: 0 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  @include xs {
+    display: contents;
+    padding: 0 5px;
+  }
+}
+
+section {
+  margin-bottom: 148px;
 }

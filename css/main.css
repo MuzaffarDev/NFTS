@@ -43,20 +43,12 @@ body {
 
 .wrapper {
   margin-top: auto;
-  padding-top: 90px;
 }
 @media only screen and (max-width: 769px) {
   .wrapper {
-    padding-top: 60px;
     margin-top: 0;
   }
 }
-@media only screen and (max-width: 376px) {
-  .wrapper {
-    padding-top: 70px;
-  }
-}
-
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -1135,14 +1127,15 @@ template {
 }
 
 .header {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 100;
   padding: 20px 0;
-  background: transparent;
+  background: #2C0B40;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.6);
 }
 @media only screen and (max-width: 769px) {

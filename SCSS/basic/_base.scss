@@ -18,14 +18,14 @@ body {
 
 .wrapper {
   margin-top: auto;
-  padding-top: 90px;
+  // padding-top: 90px;
 
   @include md {
-    padding-top: 60px;
+    // padding-top: 60px;
     margin-top: 0;
   }
   @include xs {
-    padding-top: 70px;
+    // padding-top: 70px;
   }
 }
 

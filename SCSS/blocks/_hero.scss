@@ -114,7 +114,7 @@
 
       @include xs {
         width: 100%;
-        @include font(400, 34px, 42px, #ffffff, 6px);
+        @include font(400, 38px, 42px, #ffffff, 6px);
       }
     }
 
@@ -140,7 +140,7 @@
       }
 
       @include xs {
-        @include font(300, 15px, 24px, #d7d7d7, 220px);
+        @include font(300, 15px, 24px, #d7d7d7, 235px);
       }
     }
     &-linkvideo {
@@ -156,7 +156,7 @@
       }
 
       @include xs {
-        gap: 20px;
+        gap: 40px;
         width: 100%;
         margin-bottom: 20px;
         justify-content: center;
@@ -172,6 +172,11 @@
       @include md {
         padding: 8px 16px;
         @include font(400, 8px, 11px, #ffffff);
+      }
+
+      @include xs{
+        padding: 8px 16px;
+        @include font(400, 16px, 16px, #ffffff);
       }
     }
 
@@ -191,6 +196,7 @@
       }
       @include xs {
         margin-bottom: 0;
+        justify-content: center;
       }
     }
     &-statistik {
@@ -275,6 +281,10 @@
 
   @include md {
     gap: 8px;
+  }
+
+  @include xs{
+    flex-direction: row;
   }
 
   &-icon {

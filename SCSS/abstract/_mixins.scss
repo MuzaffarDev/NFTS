@@ -90,3 +90,36 @@
     @content;
   }
 }
+
+
+$xs: 376px;
+$sm: 575px;
+$md: 769px;
+$lg: 992px;
+$xl: 1240px;
+
+// @mixin xs {
+//   @media (min-width:0) and (max-width: $xs) {
+//     @content;
+//   }
+// }
+
+// @mixin sm {
+//   @media (min-width:$xs) and (max-width: $sm) {
+//     @content;
+//   }
+// }
+
+// @mixin md {
+//   @media(min-width:370px) and (max-width: $md) {
+//     @content;
+//   }
+// }
+
+
+
+// @mixin lg {
+//   @media (min-width:770px) and (max-width: $xl) {
+//     @content;
+//   }
+// }

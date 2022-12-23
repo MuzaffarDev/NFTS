@@ -13,6 +13,14 @@ $border-gradient-color: linear-gradient(
   rgba(234, 0, 173, 0.9054972330729166) 100%
 );
 
+$revert-border-gradient-color:linear-gradient(
+  155deg,
+  rgba(138, 64, 255, 1) 41%,
+  rgba(234, 0, 173, 0.9054972330729166) 100%
+);
+
+
+
 $primary-gradient-color: linear-gradient(
   90deg,
   rgba(201, 34, 227, 1) 0%,

@@ -1,6 +1,6 @@
 .btn {
   cursor: pointer;
-  border:0;
+  border: 1px solid none;
   border-radius: 4px;
   @include sliceText(2);
   text-transform: capitalize;
